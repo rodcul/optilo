@@ -1,0 +1,43 @@
+/*
+-------------------------------------------------------------------------------------------------------------- 
+ THEME OPTIONS - JUST UPDATE COLORS AND REFERENCE YOUR BACKGROUND IMAGES WHERE REQUIRED
+--------------------------------------------------------------------------------------------------------------
+*/
+/* Update colors below */
+
+ul#mainNav li.activeNav a{ color:#ca1763; }
+ul#mainNav li a{ color:#fff; }
+#searchBox input{color:#cccccc; }
+.mainBody{  border-color:#E5E5E5; }
+#topBoxContent .incomingSearchesBox ul.incomingSearches li a{ color:#999999; }
+#topBoxContent .incomingSearchesBox ul.incomingSearches li a:hover{ color:#666; }
+.with-sidebar .sidebar  h2.categoriesHead{color:#cc0a60; }
+.with-sidebar .sidebar  ul.categoryList li a{ color:#e373a5; }
+.with-sidebar .sidebar  ul.categoryList li a.activeCategory{ background-color:#e373a5; color:#fff;}
+.topTitleContainer .titleBox h1{color:#e372a5; }
+.topTitleContainer .titleBox p{color:#999999; }
+.topTitleContainer .relatedBox h3{color:#e372a5; }
+.topTitleContainer .relatedBox ul.realatedTags li a{ color:#FFF; }
+.thumbBox { background-color:#fcedf7;  }
+.thumbBox p { color:#e373a5;}
+.thumbBox p.videoDescription a {color:#0099ff; }
+.paginationBox p.pageNum{ color:#e373a5; }
+.footerNavContainer{ color:#fff; }
+.footerNavContainer ul.footerNav li{ border-color:#fff;}
+.footerNavContainer ul.footerNav li a{ color:#fff;}
+.footerDetails p{ color:#666; }
+
+/* Do not modify anything from now on, unless you want to update the background images references */
+
+#headerContainer{background-image:url(bg_header.gif); }
+#footerContainer{ background-image:url(bg_footer.gif); }
+h1.logo a{background-image:url(img_linkMeToPornLogo.gif); }
+ul#mainNav li{ background-image:url(bg_mainNav.png); }
+ul#mainNav li a{ background-image:url(bg_mainNav.png); }
+#searchBox{  background-image:url(bg_searchBox.png); }
+.with-sidebar { background-image:url(bg_978VerticalTileSidebar.gif); }
+.with-sidebar .sidebar  ul.categoryList li a.activeCategory{ background-image:  url(img_sidebarArrow.gif); }
+.topTitleContainer .relatedBox ul.realatedTags li a{ background-image:url(bg_relatedTags.png); }
+.paginationBox p.pageNav a{ background-image:url(bg_prevNextBtn.gif); }
+.footerDetails a.backToTop{ background-image:url(bg_backToTopBtn.png); }
+
