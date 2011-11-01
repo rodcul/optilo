@@ -1,0 +1,99 @@
+**************************************************************************
+ OPTILO - HTML/CSS RESPONSIVE FRAMEWORK FOR AGILE FRONTEND DEPLOYMENT
+ Built with care by Pablo Deeleman - Questions regarding this project may 
+ be addressed to pablo@dreasmtarcash.com/deeleman@gmail.com
+ -----------------------------------------------------------------------
+ Released on Nov 1 - 2011
+**************************************************************************
+
+ The following HTML/CSS files describe a regular UI design from a tube thumbnailing 
+ page. The sliced design provided is built upon the 978 Grid System based on the 
+ HTML5 Boilerplate foundation and includes a responsive header so specific CSS 
+ styling is applied depending on each resolution.
+
+ The current design supports the 978, 1218 and 1378 grid systems. This supposes a wide
+ support for almost any screen resolution equal or higher than 1024 pixels width. As
+ mentioned above the layour is fully responsive (but not adaptive) thanks to a set of
+ CSS media queries included in the <head> tag.
+
+ -----------------------------------------------------------------------
+ CREATING NEW THEMES/SKINS
+ -----------------------------------------------------------------------
+ 
+ Skinning and applying new UI themes is a simple and straightforward task.
+ To do so, just replicate one of the available folders lcoated at the /themes 
+ main directory. Each folder contains up to 10 files and 1 stylesheet. The bitmaps
+ provided define the look & feel for the theme defined in the folder.
+ 
+ Once replicated rename your just-created folder accordingly to the theme you want
+ to deploy and open it. Update the image files you require (you may update all 
+ or just a subset of them) but make sure to keep the original name.
+ 
+ Once finished editing the bitmaps, open the stylesheet. The CSS rules provided are 
+ divided into two separate blocks. The first block encompasses all the CSS rules 
+ that define the overall text & link colors (and some border colors as well). Just
+ update this first block and leave the second block as is UNLESS you have modified any 
+ filename and need to point to it the corresponding CSS rule.
+ 
+ Now that you have created a new set of files defining a new UI theme just reference
+ it in the page header. Look for the following code snippet:
+ 
+ <!--
+  	[ DEV NOTES ]
+    Update the following stylesheet reference to switch the current UI theme
+  -->
+  <link rel="stylesheet" href="/themes/pink/theme.css">
+  
+  And replace the HREF url with your theme´s folder location. That´s all. Easy, uh?
+  
+  ADVICE: In case you plan to deploy several themes and want to save time on the
+  color customisation tasks, may be you shoudl consider isolating colors into variables
+  and apply them with a variable/mixin frrameworks targected to CSS. The LESS framework
+  is specially addressed to work around these problems and its use is specially advised in 
+  case of huge overhead.
+
+ -----------------------------------------------------------------------
+ SIDEBAR
+ ----------------------------------------------------------------------- 
+ The layout supports in the body DIV a side bar contianing links. In order
+ to remove the sidebar adn have the remaining eklements positioning 
+ accordingly to the new width available, just remove the 'with-sidebar'
+ in the "centerContent" DOM element.
+ 
+ -----------------------------------------------------------------------
+ NOTES REGARDING THUMBNAIL 
+ -----------------------------------------------------------------------
+ 
+ Chances are that the video thumbnails will change over time. In this case,
+ changes will be required in order to have the grid adapting properly to the new 
+ thumbnail sizes. Any thumbnail size exceeding the container size 
+ will remain hidden by default.
+ 
+ Thumbnails are displayed accordingly to the page width and UI layout, bearing in mind
+ that there is a sidebar grabbing space from the body container or not. Specific CSS rules
+ affecting to the thumbnails margin/padding/width are included in each resolution-specific
+ stylesheet.
+ 
+ Everytime the thumbnail size is modified, just update the width/margin/padding values
+ available in each resolution stylesheet (notes pointing to the specific rules have been
+ included for your convenience) until the final layout matches your desired look&feel for these
+ new sizes. 
+ 
+ -----------------------------------------------------------------------
+ REFERENCES & FURTHER READING
+ -----------------------------------------------------------------------
+ * HTML5 Boilerplate
+   http://html5boilerplate.com/
+ 
+ * The 978 Grid System
+   http://978.gs/
+   
+ * About Media Queries
+   http://www.w3.org/TR/css3-mediaqueries/
+   http://coding.smashingmagazine.com/2010/07/19/how-to-use-css3-media-queries-to-create-a-mobile-version-of-your-website/
+ 
+ * The LESS Framework
+   http://lesscss.org/
+   
+ * The SASS Framework (LESS for Ruby Developers)
+   http://sass-lang.com/
